@@ -13,19 +13,31 @@ public class Task1 {
         while (true) {
             String city = reader.readLine();
             if (city.equals("Stop")) break;
-            else if (city.equals("Москва")) System.out.println("Россия");
-            else if (city.equals("Владивосток")) System.out.println("Россия");
-            else if (city.equals("Ростов")) System.out.println("Россия");
-            else if (city.equals("Рим")) System.out.println("Италия");
-            else if (city.equals("Милан")) System.out.println("Италия");
-            else if (city.equals("Турин")) System.out.println("Италия");
-            else if (city.equals("Ливерпуль")) System.out.println("Англия");
-            else if (city.equals("Манчестер")) System.out.println("Англия");
-            else if (city.equals("Лондон")) System.out.println("Англия");
-            else if (city.equals("Берлин")) System.out.println("Германия");
-            else if (city.equals("Мюнхен")) System.out.println("Германия");
-            else if (city.equals("Кёльн")) System.out.println("Германия");
-            else System.out.println("Неизвестная страна");
+            switch (city) {
+                case ("Москва"):
+                case ("Владивосток"):
+                case ("Ростов"):
+                    System.out.println("Россия");
+                    break;
+                case ("Рим"):
+                case ("Милан"):
+                case ("Турин"):
+                    System.out.println("Италия");
+                    break;
+                case ("Ливерпуль"):
+                case ("Манчестер"):
+                case ("Лондон"):
+                    System.out.println("Англия");
+                    break;
+                case ("Берлин"):
+                case ("Мюнхен"):
+                case ("Кёльн"):
+                    System.out.println("Германия");
+                    break;
+                default:
+                    System.out.println("Неизвестная страна");
+                    break;
+            }
         }
     }
 }
