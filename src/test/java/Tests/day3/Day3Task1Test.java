@@ -10,7 +10,7 @@
 //public class Day3Task1Test extends AbstractTest {
 //
 //    @Test
-//    public void Moscow() {
+//   public void Moscow() {
 //        setInput("Москва\nStop\n");
 //        Task1.main(new String[0]);
 //        assertEquals("Россия" + System.lineSeparator(), getOutput(), "Москва");
