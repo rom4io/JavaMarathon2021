@@ -9,10 +9,9 @@ public class Task3 {
         int b = scanner.nextInt();
         int floor = 0;
         while (floor < b) {
-            if (a > b) System.out.println("Некорректный ввод");
+            if (a > b) System.out.print("Некорректный ввод");
             floor = a++;
-            if (a % 10 == 0) ;
-            else if (a % 5 == 0 && a != b) System.out.println(a);
+            if (a % 5 == 0 && a != b && a%10!=0) System.out.print(a + " ");
         }
     }
 }
