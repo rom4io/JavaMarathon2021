@@ -7,11 +7,11 @@ import java.lang.invoke.SwitchPoint;
 import java.util.Scanner;
 
 public class Task1 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            String city = reader.readLine();
+            String city = scanner.nextLine();
             if (city.equals("Stop")) break;
             switch (city) {
                 case ("Москва"):
