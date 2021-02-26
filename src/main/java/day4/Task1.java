@@ -1,14 +1,16 @@
 package day4;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] mas = new int[scanner.nextInt()];
+        Random rand = new Random();
 
         for (int i = 0; i < mas.length; i++) {
-            mas[i] = (int) (Math.random() * 10);
+            mas[i] = rand.nextInt(10);
         }
         int vosem = 0;
         int odin = 0;

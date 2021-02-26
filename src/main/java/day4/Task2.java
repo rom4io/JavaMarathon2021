@@ -1,11 +1,14 @@
 package day4;
 
+import java.util.Random;
+
 public class Task2 {
     public static void main(String[] args) {
         int[] numbers = new int[100];
+        Random rand = new Random();
 
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = (int) (Math.random() * 10000);
+            numbers[i] = rand.nextInt(10000);
         }
 
         int max = 0;

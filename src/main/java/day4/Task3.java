@@ -1,13 +1,16 @@
 package day4;
 
+import java.util.Random;
+
 public class Task3 {
     public static void main(String[] args) {
 
         int[][] matrix = new int[12][8];
+        Random rand = new Random();
 
         for (int i = 0; i < matrix.length; i++) {
             for (int a = 0; a < matrix[i].length; a++) {
-                matrix[i][a] = (int) (Math.random() * 50);
+                matrix[i][a] = rand.nextInt(50);
             }
         }
         int index = 0;
