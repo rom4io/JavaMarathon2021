@@ -17,9 +17,10 @@ public class Task2 {
         Player player6 = new Player(random.nextInt(diff) + 90);
 
         Player.info();
-        //System.out.println(player2.getStamina());
+        System.out.println(player2.getStamina());
 
         Player player7 = new Player(random.nextInt(diff) + 90);
+        System.out.println(player1.getCountPlayers());
         for (int i = 0; i <=100; i++) {
             player2.run();
         }
