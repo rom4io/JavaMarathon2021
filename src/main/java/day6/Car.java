@@ -32,7 +32,7 @@ class Car {
     public void info(){
         System.out.println ("Это автомобиль");
     }
-    int yearDifference(int inputYear){
+    public int yearDifference(int inputYear){
         return Math.abs(inputYear - age);
     }
 }

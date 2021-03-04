@@ -1,8 +1,8 @@
 package day6;
 
 public class Teacher {
-    String name;
-    String subject;
+    private String name;
+    private String subject;
 
     public Teacher(String name, String subject) {
         this.name = name;
@@ -25,7 +25,7 @@ public class Teacher {
         return subject;
     }
 
-    void evaluate(Student student) {
+    public void evaluate(Student student) {
         int number = 2 + (int) (Math.random() * 4);
 
         String estimation = null;
