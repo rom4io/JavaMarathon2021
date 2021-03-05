@@ -15,24 +15,24 @@ public class TestFigures {
         System.out.println(calculateRedPerimeter(figures));
         System.out.println(calculateRedArea(figures));
     }
-    public static double calculateRedPerimeter(Figure[] figures){
+
+    public static double calculateRedPerimeter(Figure[] figures) {
         double sumPerim = 0;
 
-        for (int i = 0; i< figures.length;i++){
-            if(figures[i].getColor().equals("Red")){
-                sumPerim +=figures[i].perimeter();
+        for (int i = 0; i < figures.length; i++) {
+            if (figures[i].getColor().equals("Red")) {
+                sumPerim += figures[i].perimeter();
             }
         }
         return sumPerim;
     }
 
 
-
-        public static double calculateRedArea(Figure[] figures){
+    public static double calculateRedArea(Figure[] figures) {
         double sumArea = 0;
 
-        for (int i=0; i< figures.length;i++){
-            if (figures[i].getColor().equals("Red")){
+        for (int i = 0; i < figures.length; i++) {
+            if (figures[i].getColor().equals("Red")) {
                 sumArea += figures[i].area();
             }
         }
