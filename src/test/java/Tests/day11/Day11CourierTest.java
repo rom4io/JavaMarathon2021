@@ -18,7 +18,7 @@
 //    public void init() {
 //        w = new Warehouse();
 //        courier = new Courier(w);
-//    }
+//   }
 //
 //    @Test
 //    void doWorkOnceCourier() {
@@ -28,7 +28,7 @@
 //    }
 //
 //    @Test
-//    void doWorkOnceWarehouse() {
+ //   void doWorkOnceWarehouse() {
 //        courier.doWork();
 //        assertEquals(1, w.getCountDeliveredOrders(),
 //                "Однократный вызов метода doWork() на новом объекте Courier. Проверка поля countDeliveredOrders" +
@@ -64,12 +64,12 @@
 //    @Test
 //    void bonusNo() {
 //        Inject.field("salary").of(courier).with(1000);
-//        Inject.field("countDeliveredOrders").of(w).with(8_000);
+ //       Inject.field("countDeliveredOrders").of(w).with(8_000);
 //        courier.bonus();
 //        assertEquals("Бонус пока не доступен" + System.lineSeparator(), getOutput(),
 //                "Расчет бонуса курьера при 8 000 countDeliveredOrders Warehouse, 1000 salary Courier");
 //
-//    }
+ //   }
 //
 //    @Test
 //    void bonusTwice() {
