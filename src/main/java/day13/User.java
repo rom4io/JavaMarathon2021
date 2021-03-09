@@ -1,15 +1,16 @@
 package day13;
 
 import java.security.PublicKey;
+import java.util.ArrayList;
 import java.util.List;
 
 public class User {
-    String username;
-    List subscriptions;
+    private String username;
+    private List<User> subscriptions;
 
-    public User (String username, List subscriptions){
+    public User (String username){
         this.username = username;
-        this.subscriptions = subscriptions;
+        this.subscriptions = new ArrayList<>();
     }
 
     public List getSubscriptions() {
@@ -24,15 +25,15 @@ public class User {
         subscriptions.add(user);
     }
     public boolean isSubscribed(User user){
-        if (subscriptions.contains(user)) return true;
+        if (subscriptions.contains(user.getUsername())) return true;
         else return false;
     }
     public boolean isFriend(User user){
-        if (user.subscriptions.contains(username)) return true;
+        if (this.isSubscribed(user)&& user.isSubscribed(this)) return true;
         else return false;
     }
     public void sendMessage(User user, String text){
-
+        MessageDatabase.addNewMessage(this, user,text);
     }
     public String toString(){
         return this.username;
