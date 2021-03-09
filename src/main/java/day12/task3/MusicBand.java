@@ -8,4 +8,12 @@ public class MusicBand {
         this.name = name;
         this.year = year;
     }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String toString (){
+        return name + " " + year;
+    }
 }

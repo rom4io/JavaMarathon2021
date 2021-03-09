@@ -29,6 +29,7 @@ public class Picker implements Worker {
 
     }
 
+
     public void bonus() {
         if (isPayed == false) {
             if (warehouse.getCountPickedOrders() == 10000) {
