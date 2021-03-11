@@ -20,7 +20,6 @@ public class Task2 {
         warrior.physicalAttack(magician);
 
 
-
         System.out.println(warrior);
         System.out.println(paladin);
         System.out.println(magician);

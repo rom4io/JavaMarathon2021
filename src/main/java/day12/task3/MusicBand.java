@@ -1,10 +1,10 @@
 package day12.task3;
 
 public class MusicBand {
-    private String name;
-    private int year;
+    private final String name;
+    private final int year;
 
-    public MusicBand (String name, int year){
+    public MusicBand(String name, int year) {
         this.name = name;
         this.year = year;
     }
@@ -13,7 +13,7 @@ public class MusicBand {
         return year;
     }
 
-    public String toString (){
+    public String toString() {
         return name + " " + year;
     }
 }

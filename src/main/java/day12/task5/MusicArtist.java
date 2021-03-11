@@ -5,7 +5,7 @@ public class MusicArtist {
     private int age;
 
 
-    public MusicArtist (String name, int age){
+    public MusicArtist(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -26,7 +26,7 @@ public class MusicArtist {
         this.name = name;
     }
 
-    public String toString(){
-        return name+ " " + age;
+    public String toString() {
+        return name + " " + age;
     }
 }

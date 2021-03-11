@@ -18,18 +18,18 @@ public class Task4 {
         member2.add("member 2 3");
         member2.add("member 2 4");
 
-        MusicBand mb1 = new MusicBand("MB1",1986,member1);
+        MusicBand mb1 = new MusicBand("MB1", 1986, member1);
         MusicBand mb2 = new MusicBand("MB2", 2016, member2);
 
         mb1.printMembers();
-        System.out.println("");
+        System.out.println();
         mb2.printMembers();
 
         MusicBand.transferMembers(mb1, mb2);
-        System.out.println("");
+        System.out.println();
 
         mb1.printMembers();
-        System.out.println("");
+        System.out.println();
         mb2.printMembers();
-     }
+    }
 }
