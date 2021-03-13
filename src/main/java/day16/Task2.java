@@ -54,7 +54,7 @@ public class Task2 {
             sum += Double.parseDouble(scanner.nextLine());
         }
         System.out.println((int)sum);
-
+        scanner.close();
     }
 }
 
