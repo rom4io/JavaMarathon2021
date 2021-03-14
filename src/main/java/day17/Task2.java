@@ -41,7 +41,7 @@ public class Task2 {
     public static void print(ChessPiece board [][]){
         for (int i = 0; i < 8; i++) {
             for (int q = 0; q < board.length; q++) {
-                System.out.print(ChessPiece.values(board[i][q]));
+                System.out.print(board[i][q].getStr());
             }
             System.out.println("");
         }
